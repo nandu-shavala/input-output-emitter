@@ -1,0 +1,8 @@
+<h1>Parent</h1>
+<input type="text" [(ngModel)]='parentProperty'>
+<br>
+<h4>{{parentProperty}}</h4>
+<h4>{{childProperty1}}</h4>
+<hr>
+
+<app-child [childProperty]="parentProperty" (childEvent)="childEvent($event)"></app-child>
